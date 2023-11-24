@@ -1,6 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .title {
@@ -29,6 +38,11 @@
   display:block;
   position: relative;
   z-index: 3;
+}
+
+h3 {
+  color: rgb(41, 100, 152);
+  margin-bottom: 10px;
 }
 
 .title h2{
@@ -89,4 +103,93 @@ animation:move-twink-back 200s linear infinite;
   z-index:2;
   opacity: .4;
   animation:move-clouds-back 200s linear infinite;
+}
+
+.content{
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 50px 60px 50px;
+  padding: 10px;
+}
+
+.content h2{
+  font-size: 36px;
+}
+
+.introduction{
+  max-width: 980px; /* Set the maximum width for the introduction section */
+  margin: 1.5rem auto 6rem; /* Center the introduction section within the content div */
+  text-align: center;
+}
+
+.timeline-wrap {
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.timeline-wrap::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.timeline-block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 1.5rem;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.timeline-header {
+  width: calc(50% - 50px); /* Adjusted the width */
+  text-align: right;
+  padding-right: 10px; /* Added padding for better separation */
+  border-right: #ffffff;
+  border-right-width: 2px;
+}
+
+.timeline-header img {
+  width: 100px;
+  float: left;
+  margin: 10px 15px 15px 0;
+}
+
+.timeline-header h2 {
+  margin-bottom: 0;
+  white-space: wrap;
+}
+
+.timeline-content {
+  width: calc(50% - 50px); /* Adjusted the width */
+  padding-left: 10px; /* Added padding for better separation */
+  text-align: left;
+  border-left: #ffffff;
+}
+
+.timeline-content h2,
+.timeline-content p {
+  margin: 0;
+}
+
+.separator-img {
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 10px; /* Adjust the margin for spacing */
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
 }
