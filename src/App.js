@@ -58,7 +58,7 @@ function App() {
         <div className="clouds"></div>
         <div className="title">
           <h1>Shafkat Kabir</h1>
-          <h2>Aspiring Software Engineer</h2>
+          <h2>Software Engineer</h2>
         </div>
 
         <div className="about-container">
