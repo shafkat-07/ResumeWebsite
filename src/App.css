@@ -510,7 +510,7 @@ animation:move-twink-back 200s linear infinite;
     font-size: 1.1rem;
     color: #3e3e3e;
   }
-  .experience {
+  .experience, .education {
     margin: 0 2rem;
   }
 }
