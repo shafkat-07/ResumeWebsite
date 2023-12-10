@@ -1,10 +1,47 @@
 import './App.css';
+import React, { useEffect } from 'react';
 import collegeLogo from './images/MSU.png';
 import education from './images/education.png';
 import work from './images/work.png';
 import data from './data/experience.json';
+import linkedin from './images/linkedin.png';
+import github from './images/github.png';
+import number0 from './images/0.png';
+import number1 from './images/1.png';
+import email from './images/email.png';
+import resume from './images/resume.png';
+import resumePDF from './data/Resume.pdf';
+
 
 function App() {
+  // useEffect(() => {
+  //   window.onload = function () {
+  //     const container = document.getElementById("numbers-container");
+
+  //     function getRandomInt(min, max) {
+  //       return Math.floor(Math.random() * (max - min + 1)) + min;
+  //     }
+
+  //     function createNumber() {
+  //       const number = document.createElement("div");
+  //       number.classList.add("number");
+  //       number.style.left = `${getRandomInt(0, window.innerWidth - 48)}px`;
+  //       number.style.top = `${getRandomInt(0, window.innerHeight - 48)}px`;
+
+  //       // Set the background image for each number
+  //       number.style.backgroundImage = `url(${getRandomInt(0, 1) ? number0 : number1})`;
+
+  //       container.appendChild(number);
+  //     }
+
+  //     // Adjust the number of elements as needed
+  //     const numNumbers = 100;
+  //     for (let i = 0; i < numNumbers; i++) {
+  //       createNumber();
+  //     }
+  //   };
+  // }, []);  
+
   return (
     <div>
       <head>
@@ -256,8 +293,39 @@ function App() {
             </div>
           </div>
         </div>
+        <div class="contact-container">
+          <div class="contact-section">
+            <h3>Contact Me</h3>
+            <h2>I'd love to meet you!</h2>
+            <div class="contact-info">
+              <div class="contact-item">
+                <h2>Email me at:</h2>
+                <img src={email} alt="Email Icon" />
+                  
+                  <a href="mailto:kabirmd@msu.edu">kabirmd@msu.edu</a>
+              </div>
+              <div class="contact-item">
+                <h2>Let's connect:</h2>
+                <img src={linkedin} alt="LinkedIn Icon" />
+      
+                  <a href="https://www.linkedin.com/in/shafkat-kabir-2787901b6/" target="_blank">LinkedIn Profile</a>
+              </div>
+              <div class="contact-item">
+                <h2>Download my resume:</h2>
+                <img src={resume} alt="Resume Icon" />
+                  
+                  <a href={resumePDF} download="Shafkat Kabir.pdf">My Resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </body>
+      <footer>
+        <div className="footer">
+          <p>© Copyright 2021 Shafkat Kabir</p>
+        </div>
+      </footer>
     </div>
   );
 }
