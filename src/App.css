@@ -390,9 +390,8 @@ animation:move-twink-back 200s linear infinite;
 .timeline-wrap {
   position: relative;
   margin-top: 1.5rem;
-  /* margin-bottom: 6rem; */
   text-align: center;
-  color:#000;
+  color: #000;
 }
 
 .timeline-wrap::before {
@@ -446,8 +445,8 @@ animation:move-twink-back 200s linear infinite;
   position: relative;
   background: #ffffff;
   border-radius: 50%;
-  left: .05rem;
-  top: .2rem;
+  left: 0.05rem;
+  top: 0.2rem;
   width: 50px;
 }
 
@@ -477,6 +476,44 @@ animation:move-twink-back 200s linear infinite;
   bottom: 0;
 }
 
+@media only screen and (max-width:768px) {
+  .timeline-wrap::before {
+    left: 1.3rem;
+  }
+  .timeline-ico {
+    left: 1.3rem;
+  }
+  .timeline-header {
+    float: none;
+    width: auto;
+    padding-right: 15px;
+    text-align: left;
+  }
+  .timeline-header h3 {
+    font-size: 2rem;
+  }
+  .timeline-header p {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+  .timeline-content {
+    margin: 0;
+  }
+  .timeline-content h4::after {
+    bottom: auto;
+    top: 0;
+  }
+  .timeline-header, .timeline-content {
+    padding-left: 4.3rem;
+  }
+  .timeline-content h2 {
+    font-size: 1.1rem;
+    color: #3e3e3e;
+  }
+  .experience {
+    margin: 0 2rem;
+  }
+}
 .skills-container{
   background-color: #ebeeee;
   margin: 50px 0 0;
@@ -556,6 +593,21 @@ animation:move-twink-back 200s linear infinite;
   color: #ff9800;
 }
 
+@media only screen and (max-width: 600px) {
+  .skills-container {
+    padding: 20px 2rem;
+  }
+
+  .skills {
+    padding: 20px;
+  }
+
+  .skills-left,
+  .skills-right {
+    width: 100%;
+    padding: 0;
+  }
+}
 .contact-container {
   display: flex;
   align-items: center;

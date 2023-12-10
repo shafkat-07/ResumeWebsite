@@ -78,12 +78,12 @@ function App() {
           <h2>My Academic Journey.</h2>
           <div className="timeline-wrap">
             <div className="timeline-block">
+              <div className="timeline-ico">
+                <img src={education} alt="Separator" />
+              </div>
               <div className="timeline-header">
                 <h2>Michigan State University</h2>
                 <p>Expected Graduation: May 2024</p>
-              </div>
-              <div className="timeline-ico">
-                <img src={education} alt="Separator" />
               </div>
               <div className="timeline-content">
                 <h2>Bachelor of Science</h2>
@@ -100,13 +100,14 @@ function App() {
           <div className="timeline-wrap">
             {data.map((item) => (
               <div className="timeline-block">
+                <div className='timeline-ico'>
+                  <img src={work} alt="Separator" />
+                </div>
                 <div className="timeline-header">
                   <h2>{item.company}</h2>
                   <p>{item.dates}</p>
                 </div>
-                <div className='timeline-ico'>
-                  <img src={work} alt="Separator" />
-                </div>
+
                 <div className="timeline-content">
                   <h2>{item.title}</h2>
                   {item.description.map((i) => (
@@ -301,20 +302,20 @@ function App() {
               <div class="contact-item">
                 <h2>Email me at:</h2>
                 <img src={email} alt="Email Icon" />
-                  
-                  <a href="mailto:kabirmd@msu.edu">kabirmd@msu.edu</a>
+
+                <a href="mailto:kabirmd@msu.edu">kabirmd@msu.edu</a>
               </div>
               <div class="contact-item">
                 <h2>Let's connect:</h2>
                 <img src={linkedin} alt="LinkedIn Icon" />
-      
-                  <a href="https://www.linkedin.com/in/shafkat-kabir-2787901b6/" target="_blank">LinkedIn Profile</a>
+
+                <a href="https://www.linkedin.com/in/shafkat-kabir-2787901b6/" target="_blank">LinkedIn Profile</a>
               </div>
               <div class="contact-item">
                 <h2>Download my resume:</h2>
                 <img src={resume} alt="Resume Icon" />
-                  
-                  <a href={resumePDF} download="Shafkat Kabir.pdf">My Resume</a>
+
+                <a href={resumePDF} download="Shafkat Kabir.pdf">My Resume</a>
               </div>
             </div>
           </div>
