@@ -511,7 +511,7 @@ animation:move-twink-back 200s linear infinite;
     color: #3e3e3e;
   }
   .experience, .education {
-    margin: 0 2rem;
+    margin: 2rem 2rem;
   }
 }
 .skills-container{
