@@ -66,7 +66,7 @@ function App() {
           <h2>An Introduction to Shafkat Kabir.</h2>
           <div className='introduction'>
             <p>
-              Hello! I'm Shafkat Kabir, an aspiring software engineer passionate
+              Hello! I'm Shafkat Kabir, a software engineer passionate
               about coding and technology. I love to solve problems and create
               innovative solutions. This is a brief introduction about myself.
               Feel free to explore more about my journey below.
