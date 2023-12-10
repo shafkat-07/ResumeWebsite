@@ -323,7 +323,7 @@ function App() {
       </body>
       <footer>
         <div className="footer">
-          <p>© Copyright 2021 Shafkat Kabir</p>
+          <p>© Copyright 2023 Shafkat Kabir</p>
         </div>
       </footer>
     </div>
