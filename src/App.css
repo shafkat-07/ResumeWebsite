@@ -147,7 +147,7 @@ h3 {
 .introduction {
   max-width: 980px;
   /* Set the maximum width for the introduction section */
-  margin: 1.5rem auto 0;
+  margin: 10px auto 0;
   /* Center the introduction section within the content div */
   text-align: center;
 }
