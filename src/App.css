@@ -27,7 +27,7 @@ p {
   background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.037);
 
   /* Make sure text is infront of background images */
   display: block;
@@ -53,7 +53,7 @@ h3 {
   background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.037);
 
   /* Make sure text is infront of background images */
   display: block;
