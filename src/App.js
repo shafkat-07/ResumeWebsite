@@ -11,6 +11,7 @@ import number1 from './images/1.png';
 import email from './images/email.png';
 import resume from './images/resume.png';
 import resumePDF from './data/Resume.pdf';
+import { Analytics } from '@vercel/analytics/react';
 
 
 function App() {
@@ -320,7 +321,7 @@ function App() {
             </div>
           </div>
         </div>
-
+      <Analytics />
       </body>
       <footer>
         <div className="footer">
