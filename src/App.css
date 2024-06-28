@@ -121,7 +121,8 @@ h3 {
 }
 
 .education,
-.experience {
+.experience,
+.leadership {
   background-color: white;
   display: block;
   justify-content: center;
@@ -295,7 +296,8 @@ h3 {
   }
 
   .experience,
-  .education {
+  .education,
+  .leadership {
     margin: 2rem 2rem;
   }
 }
@@ -518,4 +520,33 @@ h4 {
   color: #ffffff;
   text-align: center;
   padding: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent; /* Transparent background */
+  z-index: 4;
+}
+
+.navbar.transparent a {
+  color: white; /* Adjust text color based on background */
+}
+
+.navbar.transparent a:hover {
+  color: white; /* Optional hover effect color */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 20px;
 }

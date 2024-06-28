@@ -1,0 +1,47 @@
+[
+    {
+        "company": "Michigan State University",
+        "address": "233 S Wacker Dr, Chicago, IL 60606",
+        "title": "Undergraduate Learning Assistant",
+        "dates": "September 2021 - Present",
+        "classes": [
+            {
+                "class": "CSE 335 - Object Oriented Programming",
+                "description": [
+                    "Guide students complete projects with the highest possible quality",
+                    "Hold office hours to answer questions about the course material",
+                    "Graded assignments and projects while strictly adhering to a rubric"
+                ]
+            },
+            {
+                "class": "CSE 102 - Algorithmic Thinking and Programming",
+                "description": [
+                    "Created an interactive learning environment for students to learn the basics of programming",
+                    "Held office hours to answer questions about the course material",
+                    "Maintained excellent relationships with students and professors"
+                ]
+            },
+            {
+                "class": "MTH 132 - Calculus 1",
+                "description": [
+                    "Prepare and deliver weekly review lessons to a class of 30 students",
+                    "Utilize online platforms to answer lingering questions and provide additional resources",
+                    "Graded quizzes and exams while strictly adhering to a rubric"
+                ]
+            },
+            {
+                "class" :"MTH 103A/B - College Algebra",
+                "description": [
+                    "Assisted instructor in preparing and delivering weekly lectures",
+                    "Held office hours to answer further questions about the course material",
+                    "Graded quizzes and exams while strictly adhering to a rubric"
+                ]
+            }
+        ],
+        "description": [
+            "Create an interactive learning environment for students to learn the basics of programming",
+            "Guide students to learn the material and complete projects and assignments with the highest quality",
+            "Maintained excellent relationships with students and professors"
+        ]
+    }
+]

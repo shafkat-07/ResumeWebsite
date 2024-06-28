@@ -1,48 +1,31 @@
 import './App.css';
 import React, { useEffect } from 'react';
-import collegeLogo from './images/MSU.png';
 import education from './images/education.png';
 import work from './images/work.png';
 import data from './data/experience.json';
 import linkedin from './images/linkedin.png';
 import github from './images/github.png';
-import number0 from './images/0.png';
-import number1 from './images/1.png';
 import email from './images/email.png';
 import resume from './images/resume.png';
 import resumePDF from './data/Resume.pdf';
 import { Analytics } from '@vercel/analytics/react';
+import services from './data/services_tools.json';
+import technical from './data/technical.json';
+import leadership from './data/leadership.json';
+import lead_img from './images/lead.png';
+import Navbar from './Navbar';
+
+const sections = [
+  { id: 'about', title: 'About' },
+  { id: 'education', title: 'Education' },
+  { id: 'experience', title: 'Experience' },
+  { id: 'leadership', title: 'Leadership' },
+  { id: 'skills', title: 'Skills' },
+  { id: 'contact', title: 'Contact' },
+];
 
 
 function App() {
-  // useEffect(() => {
-  //   window.onload = function () {
-  //     const container = document.getElementById("numbers-container");
-
-  //     function getRandomInt(min, max) {
-  //       return Math.floor(Math.random() * (max - min + 1)) + min;
-  //     }
-
-  //     function createNumber() {
-  //       const number = document.createElement("div");
-  //       number.classList.add("number");
-  //       number.style.left = `${getRandomInt(0, window.innerWidth - 48)}px`;
-  //       number.style.top = `${getRandomInt(0, window.innerHeight - 48)}px`;
-
-  //       // Set the background image for each number
-  //       number.style.backgroundImage = `url(${getRandomInt(0, 1) ? number0 : number1})`;
-
-  //       container.appendChild(number);
-  //     }
-
-  //     // Adjust the number of elements as needed
-  //     const numNumbers = 100;
-  //     for (let i = 0; i < numNumbers; i++) {
-  //       createNumber();
-  //     }
-  //   };
-  // }, []);  
-
   return (
     <div>
       <head>
@@ -108,11 +91,38 @@ function App() {
                   <h2>{item.company}</h2>
                   <p>{item.dates}</p>
                 </div>
-
                 <div className="timeline-content">
                   <h2>{item.title}</h2>
                   {item.description.map((i) => (
                     <li>{i}</li>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className='leadership'>
+          <h3>Leadership</h3>
+          <h2>My Leadership Experience.</h2>
+          <div className="timeline-wrap">
+            {leadership.map((item) => (
+              <div className="timeline-block">
+                <div className='timeline-ico'>
+                  <img src={lead_img} alt="Separator" />
+                </div>
+                <div className="timeline-header">
+                  <h2>{item.company}</h2>
+                  <p>{item.dates}</p>
+                </div>
+                <div className="timeline-content">
+                  <h2>{item.title}</h2>
+                  {item.classes.map((i, index) => (
+                    <div>
+                      <h4>{i.class}</h4>
+                      {i.description.map((j, innerIndex) => (
+                        <li>{j}</li>
+                      ))}
+                    </div>
                   ))}
                 </div>
               </div>
@@ -126,172 +136,34 @@ function App() {
             <div className='skills-left'>
               <h4>Technical Skills</h4>
               <ul>
-                <li>
-                  <span class="skill-name">C++</span>
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-                <li>
-                  <span class="skill-name">Python</span>
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                  </div>
-                </li>
-                <li>
-                  <span class="skill-name">C#/.NET</span>
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-                <li>
-                  <span class="skill-name">JavaScript</span>
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-                <li>
-                  <span class="skill-name">C</span>
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-                <li>
-                  <span class="skill-name">React.JS</span>
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-                <li>
-                  <span class="skill-name">Angular</span>
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-                <li>
-                  <span class="skill-name">HTML/CSS</span>
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-                <li>
-                  <span class="skill-name">GIT</span>
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-                <li>
-                  <span class="skill-name">MySQL</span>
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
+                {technical.TechnicalSkills.items.map((skill, index) => (
+                  <li key={index}>
+                    <span className="skill-name">{skill.name}</span>
+                    <div>
+                      {skill.rating.map((isChecked, starIndex) => (
+                        <span key={starIndex} className={`fa fa-star ${isChecked ? 'checked' : ''}`}></span>
+                      ))}
+                    </div>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className='skills-right'>
               <h4>Services/Tools</h4>
-              <ul>
-                <li>
-                  <span class="skill-name">AWS</span>
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-                <li>
-                  <span class="skill-name">Google Cloud</span>
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-                <li>
-                  <span class="skill-name">Linux</span>
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-                <li>
-                  <span class="skill-name">Hugging Face</span>
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-                <li>
-                  <span class="skill-name">Docker</span>
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-                <li>
-                  <span class="skill-name">Terraform</span>
-                  <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </li>
-              </ul>
+              <div>
+                <ul>
+                  {services.ServicesTools.items.map((service, index) => (
+                    <li key={index}>
+                      <span className="skill-name">{service.name}</span>
+                      <div>
+                        {service.rating.map((isChecked, starIndex) => (
+                          <span key={starIndex} className={`fa fa-star ${isChecked ? 'checked' : ''}`}></span>
+                        ))}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -310,7 +182,7 @@ function App() {
                 <h2>Let's connect:</h2>
                 <img src={linkedin} alt="LinkedIn Icon" />
 
-                <a href="https://www.linkedin.com/in/shafkat-kabir-2787901b6/" target="_blank">LinkedIn Profile</a>
+                <a href="https://www.linkedin.com/in/shafkat-kabir-2787901b6/">LinkedIn Profile</a>
               </div>
               <div class="contact-item">
                 <h2>Download my resume:</h2>
@@ -321,7 +193,7 @@ function App() {
             </div>
           </div>
         </div>
-      <Analytics />
+        <Analytics />
       </body>
       <footer>
         <div className="footer">

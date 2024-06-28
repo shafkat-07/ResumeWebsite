@@ -1,0 +1,31 @@
+{
+    "ServicesTools": {
+      "items": [
+        {
+          "name": "AWS",
+          "rating": [1, 1, 1, 0, 0]
+        },
+        {
+          "name": "Google Cloud",
+          "rating": [1, 1, 0, 0, 0]
+        },
+        {
+          "name": "Linux",
+          "rating": [1, 1, 1, 0, 0]
+        },
+        {
+          "name": "Hugging Face",
+          "rating": [1, 1, 1, 1, 0]
+        },
+        {
+          "name": "Docker",
+          "rating": [1, 1, 1, 0, 0]
+        },
+        {
+          "name": "Terraform",
+          "rating": [1, 1, 0, 0, 0]
+        }
+      ]
+    }
+  }
+  

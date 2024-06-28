@@ -1,0 +1,46 @@
+{
+"TechnicalSkills": {
+    "items": [
+      {
+        "name": "C++",
+        "rating": [1, 1, 1, 1, 0]
+      },
+      {
+        "name": "Python",
+        "rating": [1, 1, 1, 1, 1]
+      },
+      {
+        "name": "C#/.NET",
+        "rating": [1, 1, 1, 1, 0]
+      },
+      {
+        "name": "JavaScript",
+        "rating": [1, 1, 1, 0, 0]
+      },
+      {
+        "name": "C",
+        "rating": [1, 1, 1, 0, 0]
+      },
+      {
+        "name": "React.JS",
+        "rating": [1, 1, 1, 0, 0]
+      },
+      {
+        "name": "Angular",
+        "rating": [1, 1, 0, 0, 0]
+      },
+      {
+        "name": "HTML/CSS",
+        "rating": [1, 1, 1, 0, 0]
+      },
+      {
+        "name": "GIT",
+        "rating": [1, 1, 1, 1, 0]
+      },
+      {
+        "name": "MySQL",
+        "rating": [1, 1, 1, 0, 0]
+      }
+    ]
+  }
+}
